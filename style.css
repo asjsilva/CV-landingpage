@@ -48,8 +48,8 @@ a { text-decoration: none; color: inherit; }
 
 /* Hero */
 .hero {
-  background: linear-gradient(to right, #2563eb, #3b82f6);
-  color: transarent;
+  background: linear-gradient(to right, #2563eb, ##f6f03b);
+  color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
