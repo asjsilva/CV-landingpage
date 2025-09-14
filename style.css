@@ -49,7 +49,7 @@ a { text-decoration: none; color: inherit; }
 
 /* Hero */
 header.hero {
-  background: linear-gradient(to right, #2563eb, #f6f03b); /* gradiente visível */
+  background: linear-gradient(to right, #e1cdf7, #ffffff); /* gradiente visível */
   color: white;
   height: 100vh;
   min-height: 100vh;
