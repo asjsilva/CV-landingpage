@@ -1,0 +1,73 @@
+**index.html**
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andreia Silva - Landing Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Hero -->
+<header>
+<h1>Andreia Silva</h1>
+<p>Bióloga | Técnica de Estudos Dermocosméticos</p>
+<div class="buttons">
+<a href="#" class="btn-primary">Download CV</a>
+<a href="#contacto" class="btn-outline">Contactar</a>
+</div>
+</header>
+
+
+<!-- Sobre Mim -->
+<section>
+<h2>Sobre Mim</h2>
+<p class="center">
+Profissional dedicada com 4 anos de experiência em análises de produtos cosméticos, garantindo qualidade e segurança em conformidade com regulamentações internacionais.
+</p>
+</section>
+
+
+<!-- Experiência Profissional -->
+<section class="bg-light">
+<h2>Experiência Profissional</h2>
+<div class="grid">
+<div class="card">
+<h3>PHD Trials</h3>
+<small>2021 – Presente</small>
+<p>Técnica de Estudos Dermocosméticos: análises e testes em produtos cosméticos, supervisão de projetos e atendimento a voluntários.</p>
+</div>
+<div class="card">
+<h3>Trigo Dourado</h3>
+<small>2015 – 2017</small>
+<p>Empregada de mesa: gestão de stock, atendimento e coordenação de equipa.</p>
+</div>
+</div>
+</section>
+
+
+<!-- Formação Acadêmica -->
+<section>
+<h2>Formação Acadêmica</h2>
+<ul>
+<li><strong>Universidade de Oslo (2019 – 2021)</strong> – Dissertação de Mestrado</li>
+<li><strong>Universidade de Lisboa (2018 – 2021)</strong> – Mestrado em Biologia Humana e Ambiente</li>
+<li><strong>Universidade do Algarve (2013 – 2017)</strong> – Licenciatura em Ciências do Mar</li>
+</ul>
+</section>
+
+
+<!-- Competências -->
+<section class="bg-light">
+<h2>Competências</h2>
+<div class="grid">
+<div class="card">
+<h3>Gestão & Organização</h3>
+<p>Liderança, planeamento e gestão de projetos.</p>
+</div>
+<div class="card">
+<h3>Idiomas</h3>
+<p>Inglês, Norueguês, Coreano</p>
+</div>
+```
