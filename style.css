@@ -1,17 +1,12 @@
-/* Reset e fontes */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-h1, h2, h3 { font-family: 'Montserrat', sans-serif; margin-bottom: 15px; }
-a { text-decoration: none; color: inherit; }
-
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: rgba(255, 255, 255, 0.3); /* leve transparência */
-  backdrop-filter: blur(5px); /* efeito moderno */
+  backdrop-filter: blur(5px);           /* efeito de vidro */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar .container {
@@ -22,11 +17,13 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   padding: 15px 20px;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 15px;
 }
+
 .nav-links li a {
   display: inline-flex;
   justify-content: center;
@@ -38,25 +35,33 @@ a { text-decoration: none; color: inherit; }
   font-weight: bold;
   transition: transform 0.3s, background 0.3s;
 }
+
 .nav-links li a:hover {
   background: #e841aa;
   transform: scale(1.05);
 }
 
 /* Hero */
-.hero {
-  background: linear-gradient(to right, #2563eb, #f6f03b);
+header.hero {
+  background: linear-gradient(to right, #2563eb, #f6f03b); /* gradiente visível */
   color: white;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100vh;           /* ocupa toda a viewport */
+  min-height: 100vh;       /* garante altura mínima */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px; /* remove padding-top que empurra o gradiente */
+  padding: 0 20px;         /* remove padding-top que empurra o gradiente */
   flex-direction: column;
-  position: relative; /* garante que o z-index funcione */
+  position: relative;
   z-index: 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .hero-header {
@@ -66,6 +71,7 @@ a { text-decoration: none; color: inherit; }
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .hero-photo {
   width: 120px;
   height: 120px;
@@ -73,8 +79,10 @@ a { text-decoration: none; color: inherit; }
   border: 4px solid white;
   border-radius: 10px;
 }
+
 .hero h1 { font-size: 3.5rem; margin: 0; }
 .hero p { font-size: 1.2rem; margin: 20px 0; }
+
 .hero .btn-primary {
   background: white;
   color: #2563eb;
@@ -83,19 +91,10 @@ a { text-decoration: none; color: inherit; }
   font-weight: bold;
   transition: background 0.3s;
 }
-.hero .btn-primary:hover { background: #f1f5f9; }
 
-/* Sections */
-.section { padding: 80px 20px; }
-.section.light { background: #f9fafb; }
-.container { max-width: 1000px; margin: auto; }
-.grid { display: grid; gap: 20px; }
-@media (min-width: 768px) { .grid { grid-template-columns: 1fr 1fr; } }
-.card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-
-/* Footer */
-.footer { background: #1e293b; color: white; text-align: center; padding: 60px 20px; }
-.footer a { color: #93c5fd; }
+.hero .btn-primary:hover {
+  background: #f1f5f9;
+}
 
 /* Responsivo Hero */
 @media (max-width: 768px) {
