@@ -1,55 +1,4 @@
-/* Fontes e reset */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 15px;
-}
-a { text-decoration: none; color: inherit; }
-
-/* Navbar */
-.navbar {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  background: linear-gradient(to right, #2563eb, #3b82f6);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
-.navbar .container {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-.nav-links li a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 18px;        /* espaço interno */
-  border-radius: 50px;       /* formato “pílula” */
-  background: #2563eb;
-  color: white;
-  font-weight: bold;
-  transition: transform 0.3s, background 0.3s;
-}
-.nav-links li a:hover {
-  background: #1e40af;
-  transform: scale(1.05);
-}
-
-/* Hero (sem imagem, com gradiente) */
+/* Hero com gradiente azul */
 .hero {
   background: linear-gradient(to right, #2563eb, #3b82f6);
   color: white;
@@ -59,15 +8,39 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   text-align: center;
   padding: 0 20px;
+  flex-direction: column;
 }
+
+/* Container do nome e foto lado a lado */
+.hero-header {
+  display: flex;
+  align-items: center;   /* alinha verticalmente */
+  gap: 20px;             /* espaço entre nome e foto */
+  justify-content: center;
+}
+
+/* Foto quadrada com moldura */
+.hero-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;      /* preenche o quadrado sem distorcer */
+  border: 4px solid white;/* moldura branca */
+  border-radius: 10px;    /* borda levemente arredondada */
+}
+
+/* Texto dentro do hero */
 .hero h1 {
   font-size: 3.5rem;
+  margin: 0;
 }
+
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
-.hero .btn {
+
+/* Botão de download */
+.hero .btn-primary {
   background: white;
   color: #2563eb;
   padding: 12px 25px;
@@ -75,44 +48,7 @@ a { text-decoration: none; color: inherit; }
   font-weight: bold;
   transition: background 0.3s;
 }
-.hero .btn:hover {
+
+.hero .btn-primary:hover {
   background: #f1f5f9;
-}
-
-/* Sections */
-.section {
-  padding: 80px 20px;
-}
-.section.light {
-  background: #f9fafb;
-}
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
-.grid {
-  display: grid;
-  gap: 20px;
-}
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Footer */
-.footer {
-  background: #1e293b;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-.footer a {
-  color: #93c5fd;
 }
