@@ -16,7 +16,7 @@ a { text-decoration: none; color: inherit; }
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  background: transparent; /* antes era white */
+  background: linear-gradient(to right, #2563eb, #3b82f6);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1000;
 }
