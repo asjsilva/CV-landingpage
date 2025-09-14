@@ -10,13 +10,10 @@ a { text-decoration: none; color: inherit; }
 
 /* Navbar */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: transparent;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.3); /* leve transparência */
+  backdrop-filter: blur(5px); /* efeito moderno */
 }
+
 .navbar .container {
   max-width: 1100px;
   margin: auto;
@@ -48,17 +45,20 @@ a { text-decoration: none; color: inherit; }
 
 /* Hero */
 .hero {
-  background: linear-gradient(to right, #2563eb, #f6f03b) !important;
-}
+  background: linear-gradient(to right, #2563eb, #f6f03b);
   color: white;
   height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 80px 20px 0 20px;
+  padding: 0 20px; /* remove padding-top que empurra o gradiente */
   flex-direction: column;
+  position: relative; /* garante que o z-index funcione */
+  z-index: 0;
 }
+
 .hero-header {
   display: flex;
   align-items: center;
