@@ -13,7 +13,7 @@ a { text-decoration: none; color: inherit; }
   position: fixed;
   top: 0;
   width: 100%;
-  background: white; /* transparente para ver o gradiente */
+  background: transparent;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -48,7 +48,8 @@ a { text-decoration: none; color: inherit; }
 
 /* Hero */
 .hero {
-  background: linear-gradient(to right, #2563eb, #f6f03b);
+  background: linear-gradient(to right, #2563eb, #f6f03b) !important;
+}
   color: white;
   height: 100vh;
   display: flex;
