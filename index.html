@@ -3,84 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andreia Silva - Landing Page</title>
+  <title>Andreia Silva - CV Online</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h2 class="logo">Andreia Silva</h2>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Hero -->
-  <header>
-    <h1>Andreia Silva</h1>
-    <p>Bióloga | Técnica de Estudos Dermocosméticos</p>
-    <div class="buttons">
-      <a href="CV-Andreia-Silva.pdf" class="btn-primary">Download CV</a>
-      <a href="#contacto" class="btn-outline">Contactar</a>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Andreia Silva</h1>
+      <p>Bióloga | Técnica de Estudos Dermocosméticos</p>
+      <a href="CV-Andreia-Silva.pdf" class="btn" download>📄 Download CV</a>
     </div>
   </header>
 
   <!-- Sobre Mim -->
-  <section>
-    <h2>Sobre Mim</h2>
-    <p class="center">
-      Profissional dedicada com 4 anos de experiência em análises de produtos cosméticos, garantindo qualidade e segurança em conformidade com regulamentações internacionais.
-    </p>
+  <section id="sobre" class="section light">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>
+        Profissional dedicada com 4 anos de experiência em análises de produtos cosméticos,
+        garantindo qualidade e segurança em conformidade com regulamentações internacionais.
+      </p>
+    </div>
   </section>
 
   <!-- Experiência Profissional -->
-  <section class="bg-light">
-    <h2>Experiência Profissional</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>PHD Trials</h3>
-        <small>2021 – Presente</small>
-        <p>Técnica de Estudos Dermocosméticos: análises e testes em produtos cosméticos, supervisão de projetos e atendimento a voluntários.</p>
-      </div>
-      <div class="card">
-        <h3>Trigo Dourado</h3>
-        <small>2015 – 2017</small>
-        <p>Empregada de mesa: gestão de stock, atendimento e coordenação de equipa.</p>
+  <section id="experiencia" class="section">
+    <div class="container">
+      <h2>Experiência Profissional</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>PHD Trials</h3>
+          <small>2021 – Presente</small>
+          <p>
+            Técnica de Estudos Dermocosméticos: análises e testes em produtos cosméticos,
+            supervisão de projetos e atendimento a voluntários.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Trigo Dourado</h3>
+          <small>2015 – 2017</small>
+          <p>
+            Empregada de mesa: gestão de stock, atendimento e coordenação de equipa.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Formação Acadêmica -->
-  <section>
-    <h2>Formação Acadêmica</h2>
-    <ul>
-      <li><strong>Universidade de Oslo (2019 – 2021)</strong> – Dissertação de Mestrado</li>
-      <li><strong>Universidade de Lisboa (2018 – 2021)</strong> – Mestrado em Biologia Humana e Ambiente</li>
-      <li><strong>Universidade do Algarve (2013 – 2017)</strong> – Licenciatura em Ciências do Mar</li>
-    </ul>
+  <section id="formacao" class="section light">
+    <div class="container">
+      <h2>Formação Acadêmica</h2>
+      <ul>
+        <li><strong>Universidade de Oslo (2019 – 2021)</strong> – Dissertação de Mestrado</li>
+        <li><strong>Universidade de Lisboa (2018 – 2021)</strong> – Mestrado em Biologia Humana e Ambiente</li>
+        <li><strong>Universidade do Algarve (2013 – 2017)</strong> – Licenciatura em Ciências do Mar</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Competências -->
-  <section class="bg-light">
-    <h2>Competências</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Gestão & Organização</h3>
-        <p>Liderança, planeamento e gestão de projetos.</p>
-      </div>
-      <div class="card">
-        <h3>Idiomas</h3>
-        <p>Inglês, Norueguês, Coreano</p>
+  <section id="competencias" class="section">
+    <div class="container">
+      <h2>Competências</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Gestão & Organização</h3>
+          <p>Liderança, planeamento e gestão de projetos.</p>
+        </div>
+        <div class="card">
+          <h3>Idiomas</h3>
+          <p>Inglês, Norueguês, Coreano</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Projetos & Publicações -->
-  <section>
-    <h2>Projetos & Publicações</h2>
-    <p class="center">
-      Artigo publicado (2023): <em>Establishing a dietary pesticide exposure method allowing direct observation of sub-lethal effects in two springtail species</em> – Ecotoxicology.
-    </p>
+  <section id="publicacoes" class="section light">
+    <div class="container">
+      <h2>Projetos & Publicações</h2>
+      <p>
+        Artigo publicado (2023): <em>Establishing a dietary pesticide exposure method
+        allowing direct observation of sub-lethal effects in two springtail species</em> – Ecotoxicology.
+      </p>
+    </div>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="contact">
-    <h2>Contacto</h2>
-    <p>📍 Amadora, Lisboa</p>
-    <p>📧 ASofia.95@hotmail.com</p>
-    <p>📱 +351 935 495 640</p>
-  </section>
+  <footer id="contacto" class="footer">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>📍 Amadora, Lisboa</p>
+      <p>📧 <a href="mailto:ASofia.95@hotmail.com">ASofia.95@hotmail.com</a></p>
+      <p>📱 <a href="tel:+351935495640">+351 935 495 640</a></p>
+    </div>
+  </footer>
 </body>
 </html>
